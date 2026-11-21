@@ -17,6 +17,38 @@
 @media(max-width:920px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}.content{grid-template-columns:165px minmax(0,1fr);gap:1rem}}
 @media(max-width:650px){.wrap{width:calc(100% - 1.5rem)}.hero .wrap{grid-template-columns:1fr;gap:1.4rem;padding-block:2.5rem}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.content{display:block}.unit-nav{display:none}.bar nav{gap:.6rem;font-size:.86rem}.lesson-body{padding-left:.4rem}.lessons{padding-inline:.75rem}.review{margin-inline:.75rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Identidad visual del aula */
+:root{--paper:#f4f3ff;--blue:#4933ee;--line:#dddaf4}
+body{background:radial-gradient(ellipse at 7% 18%,#e4f8ff 0,transparent 37rem),radial-gradient(ellipse at 97% 27%,#f6dfff 0,transparent 44rem),var(--paper)}
+.bar{border-bottom:3px solid #6b4dff}
+.mark{background:#5233ed;box-shadow:3px 3px 0 #b8f879;color:white}
+.hero{position:relative;overflow:hidden;isolation:isolate;color:white;background:radial-gradient(ellipse at 95% 100%,#bd216b 0,transparent 58%),radial-gradient(ellipse at 80% 4%,#8028e5 0,transparent 62%),linear-gradient(115deg,#251879 0%,#3823ac 58%,#6719aa 100%);border-bottom:0}
+.hero::before{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,#fff2 1px,transparent 1px),linear-gradient(#fff2 1px,transparent 1px);background-size:38px 38px;mask-image:linear-gradient(90deg,transparent 9%,#000 85%)}
+.hero::after{content:"";position:absolute;z-index:1;inset:auto 0 0;height:6px;background:linear-gradient(90deg,#6bf5ef 0 30%,#bcfa69 30% 59%,#ffd258 59% 78%,#ff83ca 78%)}
+.hero .wrap{padding-block:clamp(3rem,7vw,6rem);grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(1.5rem,5vw,5rem)}
+.eyebrow{color:#d1ff99}
+h1 span{color:#cfff83}
+.lead{color:#fff;font-size:clamp(1.02rem,2vw,1.22rem)}
+.primary{background:#c7ff7d;color:#201250;border-radius:.35rem;box-shadow:4px 4px 0 #0d074a}
+.primary:hover{background:#e3ffb6}
+.board{position:relative;background:radial-gradient(#7e70c5 1.6px,transparent 1.6px) 0 0/17px 17px,#25165e;border:2px solid #d5bfff;border-radius:1.25rem;color:#21164b;box-shadow:9px 9px 0 #ed80db,0 15px 45px #1c084999;padding:clamp(.95rem,3vw,1.6rem)}
+.board figcaption{color:#fff}
+.diagram div{background:#f7edff;border:1px solid #b7a2fa}
+.diagram .cpu{background:#69f1e9;color:#191249;border-color:#aafffa;box-shadow:0 0 23px #69f1e942;letter-spacing:.2em}
+.diagram span{color:#b6fc8b}
+.tone-1{--accent:#2249c5;--soft:#e5eeff;--signal:#537cff}
+.tone-2{--accent:#6030a4;--soft:#f2e5ff;--signal:#a364ef}
+.tone-3{--accent:#006d59;--soft:#dcf9ef;--signal:#45d6a2}
+.tone-4{--accent:#8b3700;--soft:#fff0d6;--signal:#ffae45}
+.tone-5{--accent:#a11c60;--soft:#ffe5f4;--signal:#ef76b6}
+.overview{padding-top:2.8rem}
+.unit-card{background:linear-gradient(142deg,#fff 24%,var(--soft));border-top:6px solid var(--signal);box-shadow:0 5px 14px #30206710;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.unit-card:hover{transform:translateY(-4px);box-shadow:0 8px 18px #30186b28}
+.unit header{background:linear-gradient(110deg,var(--soft),white);border-left-color:var(--signal)}
+@media(max-width:650px){.hero .wrap{grid-template-columns:minmax(0,1fr);padding-block:2.6rem 3rem}.board{margin-right:9px}}
+@media(prefers-reduced-motion:reduce){.unit-card{transition:none}.unit-card:hover{transform:none}}
+
 </style>
 </head>
 <body id="inicio">
